@@ -1,0 +1,1340 @@
+/*------------------------------------------------------------------
+[Table of contents]
+1. Service CSS
+2. Image/Text Slider CSS
+3. Button CSS
+4. Team CSS
+5. Isotope CSS
+6. Icon Scroll/Curve/Big Text/Medium Text/Big Number CSS
+7. Skills CSS
+8. Image PopUp (PreetyPhoto) CSS
+9. Portfolio Page CSS
+10. Pricing CSS
+11. Contact Info CSS
+12. Single Portfolio
+13. Responsive CSS
+-------------------------------------------------------------------*/
+
+
+/* ===================================
+    1. Service CSS
+====================================== */
+
+
+.service-item 
+{
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+h5.service-title 
+{
+    font-weight: 300;
+    color: #62408c;
+    font-size: 34px;
+    line-height: 45px;
+    padding-top: 0;
+}
+
+.service-item:after 
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20%;
+    left: -30%;
+    width: 160%;
+    height: 140%;
+    border: 1px solid #9b79cd;
+    border-radius: 50px;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+a.service-link 
+{
+    display: inline-block;
+    color: #fff;
+    background-color: #e625a4;
+    text-align: left;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: all .2s linear;
+    border-radius: 50px;
+    font-size: 16px;
+    position: absolute;
+    top: -15%;
+    right: -22%;
+    opacity: 0;    
+    z-index: 1;
+    width: 54px;
+    height: 54px;
+    box-shadow: 0px 0px 50px 0px rgba(230,37,164,0.65);
+}
+
+a.service-link:hover
+{    
+    color: #fff;
+}
+
+a.service-link:after 
+{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f061";
+    transition: transform .3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.service-item:hover:after, .service-item:hover a.service-link
+{
+    opacity: 1;    
+}
+
+
+/* ===================================
+    2. Image/Text Slider CSS
+====================================== */
+
+.image-slider-wrapper
+{
+    padding-top: 20px;
+}
+
+.image-slider-wrapper .slick-slider img
+{
+    width: 100% !important;
+}
+
+.text-slider-wrapper
+{
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    color: #f2f5f6;
+    width: 760px;
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 90%;
+}
+
+.text-slider-header-quotes 
+{
+    margin-bottom: -45px;
+}
+
+.text-slider-header-quotes:before 
+{
+    content: '\201C';
+    font-family: 'Montserrat', sans-serif;
+    font-size: 140px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #e625a4;
+}
+
+.text-slider-wrapper .slick-slider
+{
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.text-slider-wrapper img.text-slide-img 
+{
+    width: 120px !important;
+    height: 120px;
+    border-radius: 90%;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 25px;
+}
+
+.slick-dots li button:before
+{
+    background-color: #fff;
+    opacity: 1 !important;
+    transition: all .3s ease;
+    border-radius: 5px;
+}
+
+.slick-dots li.slick-active button:before
+{
+    background-color: #e625a4;
+}
+
+.slick-next 
+{
+    bottom: 100px;
+    top: auto;
+    right: calc(50% - 140px);
+    background-image: none;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+.slick-next:after
+{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f061";
+    transition: transform .3s ease;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.slick-prev
+{
+    bottom: 100px;
+    top: auto;
+    left: calc(50% - 140px);
+    background-image: none;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+.slick-prev:after
+{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f060";
+    transition: transform .3s ease;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.text-slide-name 
+{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+.text-slide-position 
+{
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 5px;
+    margin-top: -10px;
+}
+
+.full-page-width 
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.chrome .site-wrapper img
+{
+    image-rendering: -webkit-optimize-contrast
+}
+
+
+/* ===================================
+    3. Button CSS
+====================================== */
+
+a.button
+{
+    display: inline-block;
+    color: #fff !important;
+    background-color: #e625a4;
+    text-align: left;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    padding-left: 40px;
+    padding-right: 35px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: all .2s linear;
+    margin-bottom: 17px;
+    border-radius: 50px;
+    font-size: 16px;    
+    box-shadow: 0px 0px 50px 0px rgba(230,37,164,0.65);
+}
+
+a.button:after 
+{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f061";
+    margin-left: 25px;
+    transition: transform .3s ease;
+}
+
+a.button:hover:after
+{
+    transform: translateX(5px);
+}
+
+a.button.scroll:hover:after
+{
+    transform: rotate(90deg);
+}
+
+
+
+/* ===================================
+    4. Team CSS
+====================================== */
+
+.member 
+{
+    text-align: center;
+}
+
+
+img.member-img 
+{
+    border-radius: 90%;
+}
+
+.member .member-name 
+{
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.member .member-content 
+{
+    margin-top: 20px;
+}
+.social-holder 
+{
+    margin-bottom: 15px;
+}
+
+.social-holder .social 
+{
+    display: inline-block;
+    margin: 0 5px;
+    width: 35px;
+    height: 35px;
+    background-color: #e625a4;
+    border-radius: 90%;
+    position: relative;
+    overflow: hidden;
+    transition: background-color .3s ease;
+}
+
+.social-holder .social:hover 
+{
+    background-color: #fff;
+}
+
+body .social a 
+{
+    color: #fff;
+}
+
+.social span 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+
+/* ===================================
+    5. Isotope CSS
+====================================== */
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+
+
+/* ===================================
+    6. Icon Scroll/Curve/Big Text/Medium Text/Big Number CSS
+====================================== */
+
+.icon-scroll,
+.icon-scroll:before {
+    position: absolute;
+    left: 50%;    
+}
+
+.icon-scroll {
+    display: none;
+    width: 35px;
+    height: 60px;
+    margin-left: -20px;
+    bottom: 25px;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
+}
+
+.icon-scroll:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(35px);
+        transform: translateY(35px);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(35px);
+        transform: translateY(35px);
+    }
+}
+
+
+@media screen and (min-height: 768px) 
+{  
+    .icon-scroll
+    {
+        display: block;
+    }
+}
+
+.curve-text 
+{
+    font-family: 'League Script', cursive;
+    font-weight: 400;
+    color: #fff;
+    font-size: 120px;
+    line-height: 150px;
+}
+
+@media screen and (min-height: 950px) 
+{  
+    .curve-text 
+    {
+        padding-top: 10%;
+    }
+}
+
+.intro-description
+{
+    font-size: 32px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.big-text
+{
+    font-size: 34px;
+    line-height: 45px;
+    color: #62408c;
+    letter-spacing: 1px;
+}
+
+.medium-text
+{
+    font-size: 24px;
+    line-height: 35px;    
+    letter-spacing: 2px;
+}
+
+.big-number 
+{
+    color: #62408c;
+    text-align: center;
+    margin-bottom: 85px;
+    padding: 13px 0;
+}
+
+.big-number-content 
+{
+    font-size: 135px;
+    line-height: 100%;
+    font-weight: 700;
+    margin-top: -55px;
+}
+
+span.up-text 
+{
+    font-size: 72px;
+    vertical-align: 85px;
+    margin-left: -21px;
+    font-weight: 300;
+}
+
+.big-down-text 
+{    
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+
+/* ===================================
+    7. Skills CSS
+====================================== */
+
+.v-skills-holder 
+{
+    text-align: center;
+    position: relative;
+    margin: 40px 0;
+}
+
+.v-skills-level, .v-skills-level-2, .v-skills-holder:after, .v-skills-holder:before 
+{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 20%;
+    background-color: #F5ECFF;
+}
+
+.v-skills-level-2
+{
+    top: 40%;
+}
+
+.v-skills-holder:after 
+{
+    top: 60%;
+    content: "";
+}
+
+.v-skills-holder:before 
+{
+    top: 80%;
+    content: "";
+}
+
+.v-skill 
+{
+    width: 25px;
+    height: 250px;
+    background-color: #efe2ff;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    border: 5px solid #fff;
+    z-index: 1;
+    border-radius: 50px;
+}
+
+.v-skills-holder .v-skill:last-of-type
+{
+    margin-right: 0;
+}
+
+.v-skill-fill 
+{
+    position: absolute;    
+    bottom: 0;
+    left: 0;
+    background-color: #e625a4;
+    border-radius: 0 0 50px 50px;
+}
+
+.v-skill-text 
+{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* ===================================
+    8. Image PopUp (PreetyPhoto) CSS
+====================================== */
+
+div.pp_default .pp_loaderIcon
+{
+    display: none !important;
+}
+
+div.pp_default a.pp_arrow_previous
+{
+    background-image: url(../images/nav_left.png);
+    background-size: 20px 20px;    
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -99999999px;
+    transition: transform .3s ease;
+}
+
+div.pp_default a.pp_arrow_next
+{
+    background-image: url(../images/nav_right.png);
+    background-size: 20px 20px;    
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -99999999px;
+    transition: transform .3s ease;
+}
+
+div.pp_default a.pp_arrow_previous:hover 
+{
+    transform: translateX(-5px);
+}
+
+div.pp_default a.pp_arrow_next:hover 
+{
+    transform: translateX(5px);
+}
+
+div.pp_default .pp_close
+{
+    background-image: url(../images/close.png);
+    background-size: 30px 30px;
+    margin-top: 5px;
+    text-indent: -99999999px;
+    font-size: 0;
+    line-height: 0;    
+}
+
+div.pp_default .pp_next:hover 
+{
+    background: url(../images/nav_right.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 20px;
+}
+
+div.pp_default .pp_previous:hover
+{
+    background: url(../images/nav_left.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    background-size: 20px;    
+}
+
+div.pp_default .pp_nav .currentTextHolder
+{
+    padding: 0 0 0 20px;
+    color: #fff;
+}
+
+div.pp_default .pp_description 
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top: -30px;
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+}
+
+a.video-popup-holder 
+{
+    line-height: 0;
+    font-size: 0;
+    display: inline-block;
+}
+
+a.video-popup-holder .thumb 
+{
+    border-radius: 90%;
+}
+
+.popup-play
+{
+    background-image: url(../images/play_btn.png);
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-size: 90px 90px;
+    margin-bottom: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity .3s ease;
+}
+
+a.video-popup-holder:hover .popup-play 
+{
+    opacity: 0.7;
+}
+
+
+/* ===================================
+    9. Portfolio Page CSS
+====================================== */
+
+.category-filter-list 
+{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.category-filter-list .button 
+{
+    display: inline-block;
+    margin-right: 15px;
+    color: #3e275f;
+    transition: all .3s ease;
+    border-radius: 50px !important;
+    padding: 15px 25px 15px 25px;
+    cursor: pointer;    
+}
+
+.category-filter-list .button:last-of-type 
+{
+    margin-right: 0;
+}
+
+.category-filter-list .button:hover, .category-filter-list .button.is-checked 
+{
+    background-color: #e625a4;
+    color: #fff;    
+    box-shadow: 0px 0px 50px 0px rgba(230,37,164,0.65);
+}
+
+.grid 
+{    
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.grid-item, .grid-sizer
+{
+    width: calc(100% / 3);
+}
+
+.grid-item
+{
+    float: left;
+    font-size: 0;
+    line-height: 0;
+}
+
+.grid-item.p_two_third
+{
+    width: calc(100% / 3 * 2);
+}
+
+.grid-item.p_one
+{
+	width: 100%;
+}
+
+.grid-item img
+{
+    width: 100% !important;
+    height: auto;
+    display: block;
+}
+
+.grid-item .entry-holder 
+{
+    text-align: center;
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.grid-item a.item-link:after 
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #5F1AB3;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.portfolio-text-holder 
+{
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    display: inline-block;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .3s ease;
+    transition-delay: .1s;
+}
+
+.portfolio-arrow
+{
+    display: inline-block;
+    color: #fff;
+    background-color: #e625a4;
+    text-align: left;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: all .2s linear;
+    border-radius: 50px;
+    font-size: 16px;
+    position: absolute;
+    top: 13px;
+    left: -80px;
+    z-index: 1;
+    width: 54px;
+    height: 54px;
+}
+
+.portfolio-arrow:after
+{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f061";
+    transition: transform .3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio-title 
+{
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 0;
+}
+
+.portfolio-desc
+{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.grid-item a.item-link:hover:after
+{
+    opacity: 1;    
+}
+
+.grid-item a.item-link:hover .portfolio-text-holder
+{
+    opacity: 1;
+    transform: translateY(0);            
+}
+
+.grid-item a.item-link.highlighted .portfolio-text-holder
+{
+    transition-delay: 0s;
+}
+
+.grid-item a.item-link.highlighted:after
+{
+    transition-delay: .1s;
+}
+
+
+
+/* ===================================
+    10. Pricing CSS
+====================================== */
+
+
+.pricing-table 
+{
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 3px #ede9f3;
+}
+
+.pricing-table-title 
+{
+    background-color: #62408c;
+    color: #fff;
+    font-size: 24px;
+    padding: 40px 0;
+    margin-bottom: 25px;
+}
+
+.pricing-table-price 
+{
+    font-size: 60px;
+    line-height: 100%;
+    color: #e625a4;
+}
+
+.pricing-table ul 
+{
+    padding: 0;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.pricing-table ul li 
+{
+    border-bottom: 1px solid #ede9f3;
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+.pricing-table ul li:last-child
+{
+    border: 0;
+}
+
+.pricing-table-content-holder 
+{
+    padding: 0 10%;
+    margin-bottom: 40px;
+}
+
+.one_third.extra-width 
+{
+    width: 30%;
+    margin-right: 5%;
+}
+
+.one_third.no-margin 
+{
+    width: 33.3333%;
+    margin-right: 0;
+}
+
+
+/* ===================================
+    11. Contact Info CSS
+====================================== */
+
+.contact-info 
+{
+    margin-bottom: 30px;
+}
+
+.contact-info:after 
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.contact-info span 
+{
+    margin-right: 45px;
+    font-size: 30px;
+    min-width: 40px;
+    float: left;
+}
+
+.contact-info-content 
+{
+    line-height: 30px;
+    display: table;
+    text-align: left;
+}
+
+
+
+/* ===================================
+    12. Single Portfolio
+====================================== */
+
+
+.single.single-portfolio .portfolio-item-wrapper
+{
+    padding: 140px 0;
+}
+
+.single-portfolio .top-content
+{
+    line-height: 0;
+}
+
+.single.single-portfolio .top-content .image-slider-wrapper
+{
+    padding-top: 0;
+}
+
+.single.single-portfolio .portfolio-item-content
+{    
+    overflow: hidden;
+}
+
+.single-portfolio .portfolio-item-wrapper .entry-content
+{
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.single.single-portfolio .content-wrapper 
+{
+    padding: 50px 100px;
+}
+
+.single.single-portfolio .content-wrapper:last-of-type
+{
+    padding-bottom: 0;
+}
+
+.single-portfolio .entry-content h1 
+{
+    padding: 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.single-portfolio .nav-links 
+{
+    background-color: #fff;
+}
+
+.single.single-portfolio .one_half, .single.single-portfolio .one_third, .single.single-portfolio .two_third, .single.single-portfolio .three_fourth, 
+.single.single-portfolio .one_fourth{
+    margin-right: 10%;
+}
+
+.single.single-portfolio .one_half
+{
+    width: 45%;
+}
+.single.single-portfolio .one_third
+{
+    width: 26.6666%;
+}
+
+.single.single-portfolio .two_third
+{
+    width: 63.3333%;
+}
+.single.single-portfolio .three_fourth
+{
+    width: 72.5%;
+}
+.single.single-portfolio .one_fourth{
+    width: 17.5%;
+}
+
+.single.single-portfolio #comments
+{
+    padding-bottom: 25px;
+}
+
+.single.single-portfolio ol.comments-list-holder 
+{
+    border-top: 1px solid #62408c;
+    padding-top: 50px;
+}
+
+
+/* ===================================
+    13. Responsive CSS
+====================================== */
+
+@media screen and (max-width: 1024px)
+{
+    .service-item:after
+    {
+        left: -15%;
+        width: 130%;
+    }
+
+    a.service-link
+    {
+        right: -8%;
+    }
+
+    .portfolio-arrow 
+    {    
+        top: 2px;
+        left: -70px;
+    }
+
+    .portfolio-title 
+    {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .portfolio-desc 
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .v-skill-fill 
+    {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 1020px)
+{    
+
+    .big-number
+    {
+        margin-bottom: 85px;
+    }
+
+    .big-text 
+    {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .v-skills-holder 
+    {
+        position: relative;
+        margin: 40px auto;
+        display: block;
+        text-align: center;
+    }
+
+    .v-skills-level, .v-skills-level-2, .v-skills-holder:after, .v-skills-holder:before 
+    {
+        display: none;
+    }
+
+    .v-skill 
+    {
+        width: 300px;
+        max-width: 100%;
+        height: 25px;
+        margin: 0 auto;
+        border: 10px solid #fff;
+    }
+
+    .v-skill-fill 
+    {
+        height: 100% !important;
+        border-radius: 50px 0 0 50px;
+    }
+
+    span.v-skill-text 
+    {
+        left: 20px;
+        bottom: 0;
+        color: #fff;
+        transform: none;
+    }
+
+    .service-item
+    {
+        max-width: none;
+        margin-bottom: 85px;
+    }
+
+    .service-item:after
+    {
+        display: none;
+    }
+
+    a.service-link 
+    {
+        opacity: 1;
+        position: relative;
+        top: 25px;
+        right: auto;
+    }
+
+    .grid-item a.item-link:after, .portfolio-text-holder
+    {
+        display: none !important;
+    }
+
+    .big-number-content 
+    {
+        font-size: 85px;
+    }
+
+    span.up-text 
+    {
+        font-size: 50px;
+        vertical-align: 65px;
+    }
+
+    .pricing-table 
+    {
+        margin-top: 0 !important;
+        max-width: 366px;
+        margin: 0 auto;
+    }     
+
+    .single.single-portfolio .portfolio-item-wrapper 
+    {
+        padding: 10% 0;
+    }  
+
+    .single.single-portfolio .content-wrapper {
+        padding: 5% 10%;
+    }
+}
+
+@media screen and (max-width: 750px) {  
+
+    .grid-item, .grid-sizer, .grid-item.p_two_third
+    {
+        width: 100% !important;
+    }
+
+    .single-portfolio .nav-previous, .single-portfolio .nav-next
+    {
+        display: inline-block;
+        padding-bottom: 0;
+        max-width: none;
+        margin: 0 15px;
+    }   
+}
+
+@media screen and (max-width: 630px) 
+{  
+    .curve-text
+    {
+        font-size: 90px;
+        line-height: 105px;    
+    }
+
+    .intro-description
+    {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .icon-scroll
+    {
+        display: none;
+    }    
+
+    .big-number 
+    {
+        margin-bottom: 60px;
+    }
+
+    .big-number-content 
+    {
+        font-size: 35px;
+        margin-top: -20px;
+    }
+
+    span.up-text 
+    {
+        font-size: 35px;
+        vertical-align: 33px;
+        margin-left: -5px;
+    }
+
+    .category-filter-list .button 
+    {    
+        margin-right: 8px;    
+        padding: 7px 17px 7px 17px;    
+        font-size: 14px;
+    }
+
+    .v-skill 
+    {    
+        border: 0;
+        margin-bottom: 10px;
+    }
+
+    .text-slider-wrapper
+    {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .text-slide-name
+    {
+        margin-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width: 400px) 
+{ 
+    .contact-info span {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+
+    .contact-info-content {
+        display: block;
+        text-align: center;
+    }
+}   
